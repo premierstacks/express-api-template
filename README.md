@@ -1,6 +1,6 @@
-# [Node TypeScript Express Api Template](https://github.com/premierstacks/node-typescript-express-api-template) by [Tomáš Chochola](https://github.com/tomchochola)
+# [Express API Template](https://github.com/premierstacks/express-api-template) by [Tomáš Chochola](https://github.com/tomchochola)
 
-The Node TypeScript Express API Template provides a robust and secure foundation for building RESTful APIs using Node.js, Express, and TypeScript. It comes pre-configured with essential middleware for enhanced security headers, compression, cookie parsing, and standardized error handling. Including basic OpenTelemetry integration for observability and integrated tooling like ESLint, Prettier, and TypeScript Stack, this template accelerates development while ensuring adherence to best practices for building scalable and maintainable backend services.
+The Express API Template provides a robust and secure foundation for building RESTful APIs using Node.js, Express, and TypeScript. It comes pre-configured with essential middleware for enhanced security headers, compression, cookie parsing, and standardized error handling. Including basic OpenTelemetry integration for observability and integrated tooling like ESLint, Prettier, and TypeScript Stack, this template accelerates development while ensuring adherence to best practices for building scalable and maintainable backend services.
 
 ## What is Premierstacks
 
