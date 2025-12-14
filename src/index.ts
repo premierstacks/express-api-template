@@ -9,7 +9,7 @@ import express from 'express';
 
 const logger = logs.getLogger('logs');
 
-const PORT: number = parseInt(process.argv[2] ?? process.env['PORT'] ?? '8080');
+const PORT: number = parseInt(process.env['PORT'] ?? '8080', 10);
 const app: Express = express();
 
 app.disable('x-powered-by');

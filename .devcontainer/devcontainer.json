@@ -1,0 +1,4 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:24",
+  "postCreateCommand": "make devcontainer"
+}
