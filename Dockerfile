@@ -8,7 +8,7 @@ ENV PORT=8080
 WORKDIR /app
 
 FROM base AS development_deps
-COPY ./package.json ./package-lock.json ./
+COPY ./package.json ./
 RUN npm run npm:install
 
 FROM development_deps AS build
