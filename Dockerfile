@@ -9,14 +9,15 @@ WORKDIR /app
 
 FROM base AS development_deps
 COPY ./package.json ./
-RUN npm run npm:install
+RUN npm run npm:install:development
 
 FROM development_deps AS build
 COPY ./ ./
 RUN npm run build
 
-FROM development_deps AS production_deps
-RUN npm run npm:prune
+FROM base AS production_deps
+COPY ./package.json ./
+RUN npm run npm:install:production
 
 FROM base AS server
 USER node
