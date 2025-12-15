@@ -1,6 +1,6 @@
 .PHONY: devcontainer
 devcontainer:
-	npm run npm:ci:development
+	npm run npm:install
 	npm run build
 
 .PHONY: start

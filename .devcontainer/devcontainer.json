@@ -1,4 +1,33 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/typescript-node:24",
-  "postCreateCommand": "make devcontainer"
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode-remote.remote-containers",
+        "ms-azuretools.vscode-containers",
+        "EditorConfig.EditorConfig",
+        "ms-vscode.makefile-tools",
+        "Tyriar.sort-lines"
+      ],
+      "settings": {
+        "editor.codeActionsOnSave": {
+          "source.organizeImports": "always",
+          "source.organizeLinkDefinitions": "always",
+          "source.sort.json": "always"
+        },
+        "files.insertFinalNewline": true,
+        "files.trimFinalNewlines": true,
+        "files.trimTrailingWhitespace": true
+      }
+    }
+  },
+  "dockerComposeFile": [
+    "../compose.yaml",
+    "./compose.yaml"
+  ],
+  "postCreateCommand": "make devcontainer",
+  "runServices": [
+    "devcontainer"
+  ],
+  "service": "devcontainer",
+  "workspaceFolder": "/home/node/src"
 }

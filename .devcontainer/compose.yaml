@@ -1,0 +1,9 @@
+services:
+  devcontainer:
+    build:
+      context: ./
+      dockerfile: ./.devcontainer/Dockerfile
+      target: devcontainer
+    volumes:
+      - ./:/home/node/src:cached
+    command: sleep infinity
