@@ -31,3 +31,4 @@ COPY --from=build /workspaces/views ./views
 CMD ["node", "./dist/index.js"]
 
 FROM mcr.microsoft.com/devcontainers/typescript-node:${DEVCONTAINER_VERSION} AS devcontainer
+WORKDIR /workspaces
