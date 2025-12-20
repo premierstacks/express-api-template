@@ -5,15 +5,18 @@
 .vscode
 .zed
 
-# svg
-*.svg
-
 # node
 /node_modules
 /package-lock.json
 
 # compiled files
 /dist
+
+# environment files
+.env
+
+# svg
+*.svg
 
 # eslint
 *.tsx

@@ -2,7 +2,6 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "ms-vscode-remote.remote-containers",
         "ms-azuretools.vscode-containers",
         "EditorConfig.EditorConfig",
         "ms-vscode.makefile-tools",
@@ -21,13 +20,13 @@
     }
   },
   "dockerComposeFile": [
-    "../compose.yaml",
-    "./compose.yaml"
+    "../docker-compose.yaml",
+    "./docker-compose.yaml"
   ],
-  "postCreateCommand": "make devcontainer",
+  "postCreateCommand": "make postcreate",
   "runServices": [
     "devcontainer"
   ],
   "service": "devcontainer",
-  "workspaceFolder": "/home/node/src"
+  "workspaceFolder": "/workspaces"
 }
