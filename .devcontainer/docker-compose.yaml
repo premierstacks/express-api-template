@@ -1,12 +1,12 @@
 services:
   devcontainer:
     build:
-      context: "./"
-      dockerfile: "./Dockerfile"
-      target: "devcontainer"
+      context: './'
+      dockerfile: './Dockerfile'
+      target: 'devcontainer'
     environment:
-      APP_ENV: "local"
-      NODE_ENV: "development"
+      APP_ENV: 'local'
+      NODE_ENV: 'development'
     volumes:
-      - "./:/workspaces"
-    command: "sleep infinity"
+      - './:/workspaces'
+    command: 'sleep infinity'

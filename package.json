@@ -61,7 +61,7 @@
     "clean": "npm run clean:npm && npm run clean:dist",
     "clean:dist": "git clean -xfd ./dist",
     "clean:npm": "git clean -xfd ./node_modules ./package-lock.json",
-    "commit": "npm run fix && npm run check && npm run local",
+    "commit": "npm run fix && npm run check",
     "fix": "npm run stan && npm run fix:eslint && npm run fix:prettier",
     "fix:eslint": "eslint --fix .",
     "fix:prettier": "prettier -w .",

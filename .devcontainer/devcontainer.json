@@ -1,12 +1,7 @@
 {
   "customizations": {
     "vscode": {
-      "extensions": [
-        "ms-azuretools.vscode-containers",
-        "EditorConfig.EditorConfig",
-        "ms-vscode.makefile-tools",
-        "Tyriar.sort-lines"
-      ],
+      "extensions": ["ms-azuretools.vscode-containers", "EditorConfig.EditorConfig", "ms-vscode.makefile-tools", "Tyriar.sort-lines"],
       "settings": {
         "editor.codeActionsOnSave": {
           "source.organizeImports": "always",
@@ -19,14 +14,9 @@
       }
     }
   },
-  "dockerComposeFile": [
-    "../docker-compose.yaml",
-    "./docker-compose.yaml"
-  ],
+  "dockerComposeFile": ["../docker-compose.yaml", "./docker-compose.yaml"],
   "postCreateCommand": "make postcreate",
-  "runServices": [
-    "devcontainer"
-  ],
+  "runServices": ["devcontainer"],
   "service": "devcontainer",
   "workspaceFolder": "/workspaces"
 }
